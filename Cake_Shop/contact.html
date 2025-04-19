@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      box-sizing: border-box;
+    }
+
+
+    #container {
+      width: 1200px;
+      height: 830px;
+      border-radius: 20px;
+      margin: auto;
+    }
+    .h2{
+      color:  #d2691e;
+    }
+
+    img.logo {
+      width: 298px;
+      height: 71px;
+      display: block;
+    }
+
+    nav {
+      width: 1200px;
+      height: 40px;
+      background-color: #f97b8e;
+      /* margin-top: -45px; */
+      /* padding-top: 23px; */
+      padding-right: 30px;
+      text-align: right;
+      padding-top: 20px;
+    }
+
+    a {
+      text-decoration: none;
+      margin-left: 30px;
+      color: #85303d;
+      font-size: 16px;
+    }
+    h2{
+      color:#E94D40 ;
+      text-align:center;
+      margin: 5px;
+    }
+
+    footer {
+      width: 1200px;
+      height: 50px;
+      background-color: #f7a7a7;
+      text-align: center;
+      line-height: 50px;
+    }
+
+    .contact-section {
+      text-align: center;
+      margin: 40px 0;
+      color: #85303d;
+    }
+
+
+    .contact-box {
+      width: 400px;
+      margin: 0 auto;
+      background-color:#fadbc4;
+      padding: 20px 25px;
+      border-radius: 10px;
+    }
+
+    .contact-box form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact-box label {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .contact-box input,
+    .contact-box textarea {
+      margin-top: 5px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    .contact-box button {
+      margin-top: 20px;
+      padding: 12px;
+      background-color: #f58f8f;
+      color: white;
+      border: none;
+
+
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <a href="index.HTML"><img class="logo" src="images/logo.png"
+        alt="Cake Shop Logo WHich Links to homepage"></a>
+
+
+    <nav>
+      <a href="index.HTML">Home</a>
+      <a href="products.HTML">Our Cakes</a>
+      <a href="About.html">About Us</a>
+      <a href="Contact.html">Contact Us</a>
+    </nav>
+
+    <header>
+      <img src="images/pexels-hiure-gomes-fernandes-1309965-11082260(1).jpg" alt="">
+    </header>
+
+    <div class="contact-section">
+      <h2>Get in touch with us</h2>
+      <div class="contact-box">
+        <form action="Submit" method="post">
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" required>
+
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone">
+
+          <label for="feedback">Feedback:</label>
+          <textarea id="feedback" name="feedback" rows="4" required></textarea>
+
+          <button type="submit">Send Feedback</button>
+        </form>
+      </div>
+    </div>
+    <footer>
+      Designed By: Bibi Tahira Hussaini &copy;2025
+    </footer>
+  </div>
+</body>
+
+</html>
